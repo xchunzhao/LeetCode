@@ -1,7 +1,9 @@
+package algorithm.test;
+
 /**
  * Created by CoderZhao on 2016/3/14.
  */
-package test;
+
 public class ZigZagConversion {
     public static String convert(String s ,int numRows){
         char[][]a =new char[numRows][s.length()/2+1];

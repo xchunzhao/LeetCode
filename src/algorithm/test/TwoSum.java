@@ -1,7 +1,9 @@
+package algorithm.test;
+
 /**
  * Created by CoderZhao on 2016/3/28.
  */
-package test;
+
 public class TwoSum {
     public static int[] twoSum(int[] numbers, int target) {
         int [] result=new int[2];

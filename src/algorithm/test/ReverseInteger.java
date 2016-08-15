@@ -1,7 +1,9 @@
+package algorithm.test;
+
 /**
  * Created by CoderZhao on 2016/3/15.
  */
-package test;
+
 public class ReverseInteger {
     public static int reverse(int x) {
         boolean flag = false;

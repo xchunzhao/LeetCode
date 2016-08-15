@@ -1,7 +1,9 @@
+package algorithm.test;
+
 /**
  * Created by CoderZhao on 2016/3/28.
  */
-package test;
+
 public class CountBits {
     public static int count(int a){
         if(a==0){

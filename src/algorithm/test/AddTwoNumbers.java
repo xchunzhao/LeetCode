@@ -1,3 +1,5 @@
+package algorithm.test;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -6,7 +8,7 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-package test;
+
 public class AddTwoNumbers {
     public class ListNode {
              int val;

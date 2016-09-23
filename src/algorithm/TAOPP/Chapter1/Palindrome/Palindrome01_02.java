@@ -1,4 +1,4 @@
-package algorithm.TAOP.Palindrome;
+package algorithm.TAOPP.Chapter1.Palindrome;
 
 /**
  * Author : zhaoxiaochun

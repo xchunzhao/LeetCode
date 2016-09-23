@@ -1,4 +1,4 @@
-package algorithm.TAOP.StringContains;
+package algorithm.TAOPP.Chapter1.StringContains;
 
 /**
  * Author : zhaoxiaochun

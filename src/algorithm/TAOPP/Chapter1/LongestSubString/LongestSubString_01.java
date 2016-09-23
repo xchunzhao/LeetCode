@@ -1,4 +1,4 @@
-package algorithm.TAOP.LongestSubString;
+package algorithm.TAOPP.Chapter1.LongestSubString;
 
 /**
  * Author : zhaoxiaochun
@@ -10,7 +10,7 @@ public class LongestSubString_01 {
      * 常规算法
      * @param 保存最大长度max 初始化为1
      * 1、第一层循环遍历string
-     * 2、第二层循环从i+1--n,每循环一次判断是否会文。若回文，再跟max比较
+     * 2、第二层循环从i+1--n,每循环一次判断是否回文。若回文，再跟max比较
      * 时间复杂度为O(n^3)
      */
     private static int longestSubString_01_01(String chars, int len){

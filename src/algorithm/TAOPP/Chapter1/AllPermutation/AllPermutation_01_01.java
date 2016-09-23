@@ -1,4 +1,4 @@
-package algorithm.TAOP.AllPermutation;
+package algorithm.TAOPP.Chapter1.AllPermutation;
 
 import java.util.Arrays;
 

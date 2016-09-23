@@ -1,4 +1,4 @@
-package algorithm.TAOP.Rotate;
+package algorithm.TAOPP.Chapter1.Rotate;
 
 /**
  * Author : zhaoxiaochun
@@ -13,7 +13,7 @@ package algorithm.TAOP.Rotate;
 public class Rotate01_03 {
     /**
      * 空格分隔成String[] 将该数组反转。
-     * 对比Rotate01，m = n
+     * 对比{@link Rotate01}，m = n
      * @param strings
      */
 }

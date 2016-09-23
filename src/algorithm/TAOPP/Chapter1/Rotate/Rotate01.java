@@ -1,4 +1,4 @@
-package algorithm.TAOP.Rotate;
+package algorithm.TAOPP.Chapter1.Rotate;
 
 import java.util.Arrays;
 

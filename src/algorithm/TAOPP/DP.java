@@ -48,7 +48,6 @@ public class DP {
      * 状态转移方程：
      * v[i][j] = max{v[i-1][j],v[i-1][j-w[i]]+val[i]}
      *
-     * @param args
      */
     private static int Knapsack(int[] val, int[] wt, int weight){
         int len = val.length;
@@ -80,11 +79,75 @@ public class DP {
         return v[len-1][weight];
     }
 
+    private static int test(int[] cost, int n) {
+        int minCost = 0;
+        if(n<=2) {
+            minCost = cost[n-1];
+        } else {
+            int preCost = test(cost, n-1) + cost[0] + cost[n-1];
+            int preTwoCost = test(cost, n-2) + cost[0] + cost[n-1] + 2* cost[1];
+            minCost = preCost > preTwoCost ? preTwoCost : preCost;
+        }
+        return  minCost;
+
+    }
+
+    private static int test2(int[] cost, int n) {
+        int minCost = 0;
+        if (n<=0) {
+            return minCost;
+        } else {
+            int preTwoCost = cost[0];
+            int preCost = cost[1];
+            for (int i= 3 ;i<=n; i++) {
+                int costPlanA = preCost + cost[0] + cost[i-1];
+                int costPlanB = preTwoCost + cost[0] + cost[i-1] + 2*cost[1];
+                minCost = costPlanA > costPlanB ? costPlanB : costPlanA;
+
+                preTwoCost = preCost;
+                preCost = minCost;
+            }
+        }
+        return  minCost;
+
+    }
+
+
+    private static  int lcs(char[] array1, char[] array2) {
+        int len1 = array1.length;
+        int len2 = array2.length;
+
+        int[][] opt = new int[len1 + 1][len2 + 1];
+
+        //初始化lcs长度矩阵
+        //矩阵中最大的数及为两个字符串的最大子序列长度 且是最后为opt[len1][len2]
+        for (int i = 1; i <= len1;i++) {
+            for (int j = 1; j<=len2 ; j++) {
+                if (array1[i-1] == array2[j-1]) {
+                    opt[i][j] = opt[i - 1][j - 1] + 1;
+                } else {
+                    opt[i][j] = Math.max(opt[i][j-1],opt[i-1][j]);
+                }
+            }
+        }
+
+
+        return opt[len1][len2];
+
+    }
+
     public static void main(String[] args){
 //        int[] num = {5,6,7,1,3};
 //        System.out.println(longestIncreaseSubString(num));
-        int[] wt = {2,3,4,5};
-        int[] val = {3,4,5,6};
-        System.out.println(Knapsack(val,wt,10));
+//        int[] wt = {2,3,4,5};
+//        int[] val = {3,4,5,6};
+//        System.out.println(Knapsack(val,wt,10));
+        int[] cost = {1, 2 , 5, 10};
+        System.out.println(test2(cost,4));
+
+        char[] array1 = "akqrshrengxqiyxuloqk".toCharArray();
+        char[] array2 = "tdzbujtlqhecaqgwfzbc".toCharArray();
+
+        System.out.println(lcs(array1, array2));
     }
 }

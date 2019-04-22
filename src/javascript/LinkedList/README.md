@@ -34,7 +34,7 @@ end Add
 
 ### 搜索
 
-```text
+```cide
 Contains(head, value)
   var cursor = head;
   while(cursor !== null && cursor.value !== value) {

@@ -14,7 +14,7 @@
     - [merge-k-sorted-lists](https://github.com/xchunzhao/LeetCode/blob/master/src/javascript/datastructure/LinkedList/merge-k-sorted-lists.js)
     - [remove-nth-node-from-end-of-list](https://github.com/xchunzhao/LeetCode/blob/master/src/javascript/datastructure/LinkedList/remove-nth-node-from-end-of-list.js)
     - [reverse-node-in-k-group](https://github.com/xchunzhao/LeetCode/blob/master/src/javascript/datastructure/LinkedList/reverse-node-in-k-group.js)
-- #### 树
+ - #### 树
   - ##### 二叉树
     - [binary-tree-inorder-traversal](https://github.com/xchunzhao/LeetCode/blob/master/src/javascript/datastructure/Tree/binary-tree-inorder-traversal.js)
     - [binary-tree-level-order-traversal](https://github.com/xchunzhao/LeetCode/blob/master/src/javascript/datastructure/Tree/binary-tree-level-order-traversal.js)
